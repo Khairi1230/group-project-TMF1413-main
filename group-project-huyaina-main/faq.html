@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>FAQ</title>
+</head>
+<body>
+
+    <header>
+        <h1> FREQUENTLY ASK QUESTION </h1>
+    </header>
+
+    <!-- Logo Section -->
+    <img id="logo" src="image/huyaina.png" alt="Logo" width="250" height="95">
+
+    <main>
+
+        <nav>
+            <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html"> Products</a></li>
+            <li><a href="review.html"> Review </a></li>
+            <li><a href="blog_news.html">Blog/News</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="contact.html">Contact Information</a></li>
+            </ul>
+        </nav>
+
+<div class="faq-container">
+    <div class="question" onclick="toggleAnswer(1)"> How do I get free delivery on Huyaina's orders? </div>
+    <div class="answer" id="answer1"> You can get it during sale. </div>
+
+    <div class="question" onclick="toggleAnswer(2)"> What are Huyaina's delivery options? </div>
+    <div class="answer" id="answer2"> <p> STANDARD Arrives in 4–6 business days </p> <br> <p> EXPRESS RM 75 Arrives in 2–4 business days </div> </p>
+
+    <div class="question" onclick="toggleAnswer(3)"> When will I get an order confirmation email? </div>
+    <div class="answer" id="answer3"> We typically send order confirmation emails within 24 hours of placing the order. </div>
+
+    <div class="question" onclick="toggleAnswer(4)"> Can I change the delivery address on my order? </div>
+    <div class="answer" id="answer4"> Yes, before you receive tracking order email. If you receive tracking order email, that means we cannot change your order or your delivery address. You can cancel it and place a new order with the correct address. </div>
+
+    <div class="question" onclick="toggleAnswer(5)"> How do I return Huyaina order? </div>
+    <div class="answer" id="answer5"> We're sorry we don't accept return order. </div>
+
+    <div class="question" onclick="toggleAnswer(6)"> Can I exchange Huyaina order? </div>
+    <div class="answer" id="answer6"> Yes, you can exchange your order before you receive your tracking order email
+    (note: this is a separate email from your original order confirmation email). </div>
+
+    <div class="question" onclick="toggleAnswer(7)"> What payment methods do you accept? </div>
+    <div class="answer" id="answer7"> Credit/Debit card, Online Banking </div>
+
+    <div class="question" onclick="toggleAnswer(8)"> When will I receive my refund? </div>
+    <div class="answer" id="answer8"> Once the seller receives your return parcel, they will check and acknowledge the receipt of the returned product. Your refund will be processed if there is no further discussion.</div>
+
+</div>
+
+    <!-- Add more questions and answers as needed -->
+
+</div>
+
+<script>
+    function toggleAnswer(questionNumber) {
+            var answer = document.getElementById('answer' + questionNumber);
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+            } else {
+                answer.style.display = 'none';
+            }
+        }
+
+        window.addEventListener('scroll', function () {
+            var scrollPosition = window.scrollY;
+            var bodyHeight = document.body.clientHeight;
+            var windowHeight = window.innerHeight;
+
+            // Check if the user has scrolled to the bottom
+            if (scrollPosition + windowHeight >= bodyHeight) {
+                document.querySelector('footer').style.display = 'block';
+            } else {
+                document.querySelector('footer').style.display = 'none';
+            }
+        });
+</script>
+
+<div class="footer-basic">
+    <footer>
+        <ul class="list-inline">
+            <li><a href="index.html">Homepage</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html"> Products</a></li>
+                        <li><a href="review.html"> Review </a></li>
+                        <li><a href="blog_news.html">Blog/News</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="contact.html">Contact Information</a></li>
+        </ul>
+        <p class="copyright">HUYAINA Bakery © 2024</p>
+    </footer>
+</div>
+
+</body>
+</html>
